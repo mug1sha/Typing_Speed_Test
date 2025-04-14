@@ -117,3 +117,10 @@ function resetGame(){
 randomParagraph();
 inputField.addEventListener("input", initTyping);
 tryAgainBtn.addEventListener("click", resetGame);
+
+const hamburger = document.getElementById('hamburger');
+const navLinks = document.getElementById('navLinks');
+
+hamburger.addEventListener('click', () => {
+  navLinks.classList.toggle('show');
+});
